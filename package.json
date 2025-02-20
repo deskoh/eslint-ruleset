@@ -1,0 +1,25 @@
+{
+  "name": "eslint-ruleset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "generate:table": "tsx ./tools/generate-table.mts",
+    "generate:config-rules": "tsx ./tools/list-config-rules.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eslint/js": "9.20.0",
+    "cross-fetch": "^4.1.0",
+    "eslint": "9.20.1",
+    "markdown-table": "^3.0.4",
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.24.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3"
+  }
+}
