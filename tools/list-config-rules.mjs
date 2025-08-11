@@ -7,19 +7,29 @@ import tseslint from 'typescript-eslint';
 // import allRules from '@typescript-eslint/eslint-plugin/use-at-your-own-risk/rules';
 import { markdownTable } from 'markdown-table';
 
-import allRules, { getEnabledRules } from './rules.mjs';
-// import { version as tseslintVersion } from '@typescript-eslint/eslint-plugin/package.json';
-// import { version as eslintVersion } from 'eslint/package.json';
-const tseslintVersion= ""
-const eslintVersion= ""
+import allRules, { getEnabledRules, generateStatistics } from './rules.mjs';
+import { version as tseslintVersion } from '@typescript-eslint/eslint-plugin/package.json';
+import { version as eslintVersion } from 'eslint/package.json';
+// const tseslintVersion= ""
+// const eslintVersion= ""
 
 const eslintConfig = tseslint.config(
   eslint.configs.recommended,
+  tseslint.configs.eslintRecommended,
   tseslint.configs.recommendedTypeChecked,
-  tseslint.configs.stylisticTypeChecked,
+  // tseslint.configs.strictTypeChecked
+  // tseslint.configs.stylisticTypeChecked,
 );
 
 function generateTable(enabledRules) {
+  // Find rules in enabledRules but not in allRules
+  const missingRules = Object.keys(enabledRules).filter(
+    rule => !Object.hasOwn(allRules, rule),
+  );
+  if (missingRules.length > 0) {
+    console.warn(`\`${missingRules.join('`, `')}\``);
+  }
+
   console.log(
     markdownTable([
       ['Rule', 'Config', 'TC', "Rec'd", 'Strict', 'Style'],
@@ -28,7 +38,7 @@ function generateTable(enabledRules) {
         const { extendsBaseRule, recommended, requiresTypeChecking, url } = meta.docs;
         return [
           `[\`${ruleName}\`${deprecated ? '💀' : ''}${extendsBaseRule ? '🧱' : ''}](${url})`,
-          enabledRules.findIndex(r => r === ruleName) > -1 ? '✔️' : '',
+          Object.keys(enabledRules).findIndex(r => r === ruleName) > -1 ? '✔️' : '',
           requiresTypeChecking ? '💭' : '',
           recommended === 'recommended' ? '🟩' : '',
           recommended === 'strict' ? '🔵' : '',
@@ -47,7 +57,9 @@ const e = new ESLint({
 
 // Get the resolved configuration for the file
 const config = await e.calculateConfigForFile('./input.ts');
-const rules = await getEnabledRules(config);
+const rules = await getEnabledRules(config.rules);
+
+const { count, deprecated, hasTsExtension, stylistic } = generateStatistics(rules);
 
 console.log(`## Enabled Rules
 
@@ -118,6 +130,12 @@ console.log(`## Enabled Rules
 
 ### Rules
 
-Enabled rules in config: ${rules.length}
+Enabled rules in config: ${count}
+
+Deprecated rules: ${deprecated}
+
+Stylistic rules: ${stylistic}
+
+Has TS extension rules: ${hasTsExtension}
 `);
 generateTable(rules);

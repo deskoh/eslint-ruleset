@@ -2,7 +2,7 @@
  * Compare rules between rulesets
  */
 import RulesDb from './RulesDb.mjs';
-import { getEnabledRules, generateTable } from './rules.mjs'
+import { getEnabledRules, generateTable, generateStatistics } from './rules.mjs'
 import airbnb from './ruleset/airbnb.mjs'
 import tsRecommended from './ruleset/tsRecommended.mjs'
 
@@ -38,9 +38,11 @@ extends: [
 \`\`\`
 tseslint.config(
   eslint.configs.recommended,
+  tseslint.configs.eslintRecommended,
   tseslint.configs.recommendedTypeChecked,
   importPlugin.flatConfigs.recommended,
   importPlugin.flatConfigs.typescript,
+  reactHooks.configs['recommended-latest'],
 )
 \`\`\`
 
@@ -48,3 +50,14 @@ tseslint.config(
 `);
 
 generateTable(rulesDb);
+
+console.log(`
+## Statistics
+`);
+
+Object.entries(rulesDb.getConfigs()).forEach(([ruleset, config]) => {
+  const { count, deprecated, stylistic, hasTsExtension } = generateStatistics(config);
+  console.log(`
+${ruleset}: ${count} rules (${deprecated} deprecated, ${stylistic} stylistic, ${hasTsExtension} with TS extension)
+`);
+});

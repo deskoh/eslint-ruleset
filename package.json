@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "generate:compare-rules": "tsx ./tools/compare-rules.mts",
-    "generate:config-rules": "tsx ./tools/list-config-rules.mjs"
+    "generate:airbnb": "tsx ./tools/airbnb-ruleset.mjs > airbnb.md",
+    "generate:compare-ts-rules": "tsx ./tools/compare-ts-rules.mts > ts-rules.md",
+    "generate:config-rules": "tsx ./tools/list-config-rules.mjs > eslint-config.md"
   },
   "keywords": [],
   "author": "",
