@@ -15,7 +15,6 @@ import { version as eslintVersion } from 'eslint/package.json';
 
 const eslintConfig = tseslint.config(
   eslint.configs.recommended,
-  tseslint.configs.eslintRecommended,
   tseslint.configs.recommendedTypeChecked,
   // tseslint.configs.strictTypeChecked
   // tseslint.configs.stylisticTypeChecked,
@@ -40,7 +39,7 @@ function generateTable(enabledRules) {
           `[\`${ruleName}\`${deprecated ? '💀' : ''}${extendsBaseRule ? '🧱' : ''}](${url})`,
           Object.keys(enabledRules).findIndex(r => r === ruleName) > -1 ? '✔️' : '',
           requiresTypeChecking ? '💭' : '',
-          recommended === 'recommended' ? '🟩' : '',
+          (recommended === 'recommended' || recommended?.recommended === true) ? '🟩' : '',
           recommended === 'strict' ? '🔵' : '',
           recommended === 'stylistic' ? '🔸' : '',
         ];
