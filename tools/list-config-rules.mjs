@@ -39,7 +39,7 @@ function generateTable(enabledRules) {
           `[\`${ruleName}\`${deprecated ? '💀' : ''}${extendsBaseRule ? '🧱' : ''}](${url})`,
           Object.keys(enabledRules).findIndex(r => r === ruleName) > -1 ? '✔️' : '',
           requiresTypeChecking ? '💭' : '',
-          (recommended === 'recommended' || recommended?.recommended === true) ? '🟩' : '',
+          (recommended === 'recommended' || recommended?.recommended === true || recommended === true) ? '🟩' : '',
           recommended === 'strict' ? '🔵' : '',
           recommended === 'stylistic' ? '🔸' : '',
         ];

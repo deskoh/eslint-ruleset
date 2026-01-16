@@ -2,9 +2,9 @@
 
 ### Version
 
-`eslint` version: `9.20.1`
+`eslint` version: `9.39.2`
 
-`typescript-eslint` version: `8.24.1`
+`typescript-eslint` version: `8.53.0`
 
 ### Table Key
 
@@ -67,13 +67,13 @@
 
 ### Rules
 
-Enabled rules in config: 90
+Enabled rules in config: 89
 
 Deprecated rules: 0
 
 Stylistic rules: 0
 
-Has TS extension rules: 0
+Has TS extension rules: 1
 
 | Rule                                                                                                                                                     | Config | TC | Rec'd | Strict | Style |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -- | ----- | ------ | ----- |
@@ -113,7 +113,7 @@ Has TS extension rules: 0
 | [`@ts/consistent-type-definitions`](https://typescript-eslint.io/rules/consistent-type-definitions)                                                      |        |    |       |        | 🔸    |
 | [`@ts/consistent-type-exports`](https://typescript-eslint.io/rules/consistent-type-exports)                                                              |        | 💭 |       |        |       |
 | [`@ts/consistent-type-imports`](https://typescript-eslint.io/rules/consistent-type-imports)                                                              |        |    |       |        |       |
-| [`constructor-super`](https://eslint.org/docs/latest/rules/constructor-super)                                                                            |        |    |       |        |       |
+| [`constructor-super`](https://eslint.org/docs/latest/rules/constructor-super)                                                                            |        |    | 🟩    |        |       |
 | [`curly`](https://eslint.org/docs/latest/rules/curly)                                                                                                    |        |    |       |        |       |
 | [`default-case`](https://eslint.org/docs/latest/rules/default-case)                                                                                      |        |    |       |        |       |
 | [`default-case-last`](https://eslint.org/docs/latest/rules/default-case-last)                                                                            |        |    |       |        |       |
@@ -127,7 +127,7 @@ Has TS extension rules: 0
 | [`@ts/explicit-function-return-type`](https://typescript-eslint.io/rules/explicit-function-return-type)                                                  |        |    |       |        |       |
 | [`@ts/explicit-member-accessibility`](https://typescript-eslint.io/rules/explicit-member-accessibility)                                                  |        |    |       |        |       |
 | [`@ts/explicit-module-boundary-types`](https://typescript-eslint.io/rules/explicit-module-boundary-types)                                                |        |    |       |        |       |
-| [`for-direction`](https://eslint.org/docs/latest/rules/for-direction)                                                                                    | ✔️     |    |       |        |       |
+| [`for-direction`](https://eslint.org/docs/latest/rules/for-direction)                                                                                    | ✔️     |    | 🟩    |        |       |
 | [`func-call-spacing`💀](https://eslint.org/docs/latest/rules/func-call-spacing)                                                                          |        |    |       |        |       |
 | [`func-name-matching`](https://eslint.org/docs/latest/rules/func-name-matching)                                                                          |        |    |       |        |       |
 | [`func-names`](https://eslint.org/docs/latest/rules/func-names)                                                                                          |        |    |       |        |       |
@@ -135,7 +135,7 @@ Has TS extension rules: 0
 | [`function-call-argument-newline`💀](https://eslint.org/docs/latest/rules/function-call-argument-newline)                                                |        |    |       |        |       |
 | [`function-paren-newline`💀](https://eslint.org/docs/latest/rules/function-paren-newline)                                                                |        |    |       |        |       |
 | [`generator-star-spacing`💀](https://eslint.org/docs/latest/rules/generator-star-spacing)                                                                |        |    |       |        |       |
-| [`getter-return`](https://eslint.org/docs/latest/rules/getter-return)                                                                                    |        |    |       |        |       |
+| [`getter-return`](https://eslint.org/docs/latest/rules/getter-return)                                                                                    |        |    | 🟩    |        |       |
 | [`global-require`💀](https://eslint.org/docs/latest/rules/global-require)                                                                                |        |    |       |        |       |
 | [`grouped-accessor-pairs`](https://eslint.org/docs/latest/rules/grouped-accessor-pairs)                                                                  |        |    |       |        |       |
 | [`guard-for-in`](https://eslint.org/docs/latest/rules/guard-for-in)                                                                                      |        |    |       |        |       |
@@ -145,51 +145,52 @@ Has TS extension rules: 0
 | [`id-length`](https://eslint.org/docs/latest/rules/id-length)                                                                                            |        |    |       |        |       |
 | [`id-match`](https://eslint.org/docs/latest/rules/id-match)                                                                                              |        |    |       |        |       |
 | [`implicit-arrow-linebreak`💀](https://eslint.org/docs/latest/rules/implicit-arrow-linebreak)                                                            |        |    |       |        |       |
-| [`import/consistent-type-specifier-style`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/consistent-type-specifier-style.md) |        |    |       |        |       |
-| [`import/default`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/default.md)                                                 |        |    |       |        |       |
-| [`import/dynamic-import-chunkname`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/dynamic-import-chunkname.md)               |        |    |       |        |       |
-| [`import/export`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/export.md)                                                   |        |    |       |        |       |
-| [`import/exports-last`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/exports-last.md)                                       |        |    |       |        |       |
-| [`import/extensions`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/extensions.md)                                           |        |    |       |        |       |
-| [`import/first`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/first.md)                                                     |        |    |       |        |       |
-| [`import/group-exports`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/group-exports.md)                                     |        |    |       |        |       |
+| [`import/consistent-type-specifier-style`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/consistent-type-specifier-style.md) |        |    |       |        |       |
+| [`import/default`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/default.md)                                                 |        |    |       |        |       |
+| [`import/dynamic-import-chunkname`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/dynamic-import-chunkname.md)               |        |    |       |        |       |
+| [`import/enforce-node-protocol-usage`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/enforce-node-protocol-usage.md)         |        |    | 🟩    |        |       |
+| [`import/export`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/export.md)                                                   |        |    |       |        |       |
+| [`import/exports-last`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/exports-last.md)                                       |        |    |       |        |       |
+| [`import/extensions`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/extensions.md)                                           |        |    |       |        |       |
+| [`import/first`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/first.md)                                                     |        |    |       |        |       |
+| [`import/group-exports`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/group-exports.md)                                     |        |    |       |        |       |
 | [`import/imports-first`💀](https://github.com/import-js/eslint-plugin-import/blob/7b25c1cb95ee18acc1531002fd343e1e6031f9ed/docs/rules/imports-first.md)  |        |    |       |        |       |
-| [`import/max-dependencies`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/max-dependencies.md)                               |        |    |       |        |       |
-| [`import/named`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/named.md)                                                     |        |    |       |        |       |
-| [`import/namespace`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/namespace.md)                                             |        |    |       |        |       |
-| [`import/newline-after-import`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/newline-after-import.md)                       |        |    |       |        |       |
-| [`import/no-absolute-path`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-absolute-path.md)                               |        |    |       |        |       |
-| [`import/no-amd`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-amd.md)                                                   |        |    |       |        |       |
-| [`import/no-anonymous-default-export`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-anonymous-default-export.md)         |        |    |       |        |       |
-| [`import/no-commonjs`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-commonjs.md)                                         |        |    |       |        |       |
-| [`import/no-cycle`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-cycle.md)                                               |        |    |       |        |       |
-| [`import/no-default-export`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-default-export.md)                             |        |    |       |        |       |
-| [`import/no-deprecated`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-deprecated.md)                                     |        |    |       |        |       |
-| [`import/no-duplicates`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-duplicates.md)                                     |        |    |       |        |       |
-| [`import/no-dynamic-require`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-dynamic-require.md)                           |        |    |       |        |       |
-| [`import/no-empty-named-blocks`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-empty-named-blocks.md)                     |        |    |       |        |       |
-| [`import/no-extraneous-dependencies`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-extraneous-dependencies.md)           |        |    |       |        |       |
-| [`import/no-import-module-exports`](undefined)                                                                                                           |        |    |       |        |       |
-| [`import/no-internal-modules`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-internal-modules.md)                         |        |    |       |        |       |
-| [`import/no-mutable-exports`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-mutable-exports.md)                           |        |    |       |        |       |
-| [`import/no-named-as-default`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-named-as-default.md)                         |        |    |       |        |       |
-| [`import/no-named-as-default-member`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-named-as-default-member.md)           |        |    |       |        |       |
-| [`import/no-named-default`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-named-default.md)                               |        |    |       |        |       |
-| [`import/no-named-export`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-named-export.md)                                 |        |    |       |        |       |
-| [`import/no-namespace`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-namespace.md)                                       |        |    |       |        |       |
-| [`import/no-nodejs-modules`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-nodejs-modules.md)                             |        |    |       |        |       |
-| [`import/no-relative-packages`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-relative-packages.md)                       |        |    |       |        |       |
-| [`import/no-relative-parent-imports`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-relative-parent-imports.md)           |        |    |       |        |       |
-| [`import/no-restricted-paths`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-restricted-paths.md)                         |        |    |       |        |       |
-| [`import/no-self-import`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-self-import.md)                                   |        |    |       |        |       |
-| [`import/no-unassigned-import`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-unassigned-import.md)                       |        |    |       |        |       |
-| [`import/no-unresolved`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-unresolved.md)                                     |        |    |       |        |       |
-| [`import/no-unused-modules`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-unused-modules.md)                             |        |    |       |        |       |
-| [`import/no-useless-path-segments`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-useless-path-segments.md)               |        |    |       |        |       |
-| [`import/no-webpack-loader-syntax`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/no-webpack-loader-syntax.md)               |        |    |       |        |       |
-| [`import/order`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/order.md)                                                     |        |    |       |        |       |
-| [`import/prefer-default-export`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/prefer-default-export.md)                     |        |    |       |        |       |
-| [`import/unambiguous`](https://github.com/import-js/eslint-plugin-import/blob/v2.31.0/docs/rules/unambiguous.md)                                         |        |    |       |        |       |
+| [`import/max-dependencies`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/max-dependencies.md)                               |        |    |       |        |       |
+| [`import/named`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/named.md)                                                     |        |    |       |        |       |
+| [`import/namespace`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/namespace.md)                                             |        |    |       |        |       |
+| [`import/newline-after-import`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/newline-after-import.md)                       |        |    |       |        |       |
+| [`import/no-absolute-path`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-absolute-path.md)                               |        |    |       |        |       |
+| [`import/no-amd`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-amd.md)                                                   |        |    |       |        |       |
+| [`import/no-anonymous-default-export`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-anonymous-default-export.md)         |        |    |       |        |       |
+| [`import/no-commonjs`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-commonjs.md)                                         |        |    |       |        |       |
+| [`import/no-cycle`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-cycle.md)                                               |        |    |       |        |       |
+| [`import/no-default-export`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-default-export.md)                             |        |    |       |        |       |
+| [`import/no-deprecated`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-deprecated.md)                                     |        |    |       |        |       |
+| [`import/no-duplicates`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-duplicates.md)                                     |        |    |       |        |       |
+| [`import/no-dynamic-require`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-dynamic-require.md)                           |        |    |       |        |       |
+| [`import/no-empty-named-blocks`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-empty-named-blocks.md)                     |        |    |       |        |       |
+| [`import/no-extraneous-dependencies`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-extraneous-dependencies.md)           |        |    |       |        |       |
+| [`import/no-import-module-exports`](undefined)                                                                                                           |        |    | 🟩    |        |       |
+| [`import/no-internal-modules`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-internal-modules.md)                         |        |    |       |        |       |
+| [`import/no-mutable-exports`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-mutable-exports.md)                           |        |    |       |        |       |
+| [`import/no-named-as-default`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-named-as-default.md)                         |        |    |       |        |       |
+| [`import/no-named-as-default-member`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-named-as-default-member.md)           |        |    |       |        |       |
+| [`import/no-named-default`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-named-default.md)                               |        |    |       |        |       |
+| [`import/no-named-export`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-named-export.md)                                 |        |    |       |        |       |
+| [`import/no-namespace`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-namespace.md)                                       |        |    |       |        |       |
+| [`import/no-nodejs-modules`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-nodejs-modules.md)                             |        |    |       |        |       |
+| [`import/no-relative-packages`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-relative-packages.md)                       |        |    |       |        |       |
+| [`import/no-relative-parent-imports`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-relative-parent-imports.md)           |        |    |       |        |       |
+| [`import/no-restricted-paths`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-restricted-paths.md)                         |        |    |       |        |       |
+| [`import/no-self-import`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-self-import.md)                                   |        |    | 🟩    |        |       |
+| [`import/no-unassigned-import`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-unassigned-import.md)                       |        |    |       |        |       |
+| [`import/no-unresolved`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-unresolved.md)                                     |        |    |       |        |       |
+| [`import/no-unused-modules`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-unused-modules.md)                             |        |    |       |        |       |
+| [`import/no-useless-path-segments`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-useless-path-segments.md)               |        |    |       |        |       |
+| [`import/no-webpack-loader-syntax`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-webpack-loader-syntax.md)               |        |    |       |        |       |
+| [`import/order`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/order.md)                                                     |        |    |       |        |       |
+| [`import/prefer-default-export`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/prefer-default-export.md)                     |        |    |       |        |       |
+| [`import/unambiguous`](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/unambiguous.md)                                         |        |    |       |        |       |
 | [`indent`💀](https://eslint.org/docs/latest/rules/indent)                                                                                                |        |    |       |        |       |
 | [`indent-legacy`💀](https://eslint.org/docs/latest/rules/indent-legacy)                                                                                  |        |    |       |        |       |
 | [`init-declarations`](https://eslint.org/docs/latest/rules/init-declarations)                                                                            |        |    |       |        |       |
@@ -227,82 +228,82 @@ Has TS extension rules: 0
 | [`no-array-constructor`](https://eslint.org/docs/latest/rules/no-array-constructor)                                                                      |        |    |       |        |       |
 | [`@ts/no-array-constructor`🧱](https://typescript-eslint.io/rules/no-array-constructor)                                                                  | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-array-delete`](https://typescript-eslint.io/rules/no-array-delete)                                                                              | ✔️     | 💭 | 🟩    |        |       |
-| [`no-async-promise-executor`](https://eslint.org/docs/latest/rules/no-async-promise-executor)                                                            | ✔️     |    |       |        |       |
+| [`no-async-promise-executor`](https://eslint.org/docs/latest/rules/no-async-promise-executor)                                                            | ✔️     |    | 🟩    |        |       |
 | [`no-await-in-loop`](https://eslint.org/docs/latest/rules/no-await-in-loop)                                                                              |        |    |       |        |       |
 | [`@ts/no-base-to-string`](https://typescript-eslint.io/rules/no-base-to-string)                                                                          | ✔️     | 💭 | 🟩    |        |       |
 | [`no-bitwise`](https://eslint.org/docs/latest/rules/no-bitwise)                                                                                          |        |    |       |        |       |
 | [`no-buffer-constructor`💀](https://eslint.org/docs/latest/rules/no-buffer-constructor)                                                                  |        |    |       |        |       |
 | [`no-caller`](https://eslint.org/docs/latest/rules/no-caller)                                                                                            |        |    |       |        |       |
-| [`no-case-declarations`](https://eslint.org/docs/latest/rules/no-case-declarations)                                                                      | ✔️     |    |       |        |       |
+| [`no-case-declarations`](https://eslint.org/docs/latest/rules/no-case-declarations)                                                                      | ✔️     |    | 🟩    |        |       |
 | [`no-catch-shadow`💀](https://eslint.org/docs/latest/rules/no-catch-shadow)                                                                              |        |    |       |        |       |
-| [`no-class-assign`](https://eslint.org/docs/latest/rules/no-class-assign)                                                                                |        |    |       |        |       |
-| [`no-compare-neg-zero`](https://eslint.org/docs/latest/rules/no-compare-neg-zero)                                                                        | ✔️     |    |       |        |       |
-| [`no-cond-assign`](https://eslint.org/docs/latest/rules/no-cond-assign)                                                                                  | ✔️     |    |       |        |       |
+| [`no-class-assign`](https://eslint.org/docs/latest/rules/no-class-assign)                                                                                |        |    | 🟩    |        |       |
+| [`no-compare-neg-zero`](https://eslint.org/docs/latest/rules/no-compare-neg-zero)                                                                        | ✔️     |    | 🟩    |        |       |
+| [`no-cond-assign`](https://eslint.org/docs/latest/rules/no-cond-assign)                                                                                  | ✔️     |    | 🟩    |        |       |
 | [`no-confusing-arrow`💀](https://eslint.org/docs/latest/rules/no-confusing-arrow)                                                                        |        |    |       |        |       |
 | [`@ts/no-confusing-non-null-assertion`](https://typescript-eslint.io/rules/no-confusing-non-null-assertion)                                              |        |    |       |        | 🔸    |
 | [`@ts/no-confusing-void-expression`](https://typescript-eslint.io/rules/no-confusing-void-expression)                                                    |        | 💭 |       | 🔵     |       |
 | [`no-console`](https://eslint.org/docs/latest/rules/no-console)                                                                                          |        |    |       |        |       |
-| [`no-const-assign`](https://eslint.org/docs/latest/rules/no-const-assign)                                                                                |        |    |       |        |       |
-| [`no-constant-binary-expression`](https://eslint.org/docs/latest/rules/no-constant-binary-expression)                                                    | ✔️     |    |       |        |       |
-| [`no-constant-condition`](https://eslint.org/docs/latest/rules/no-constant-condition)                                                                    | ✔️     |    |       |        |       |
+| [`no-const-assign`](https://eslint.org/docs/latest/rules/no-const-assign)                                                                                |        |    | 🟩    |        |       |
+| [`no-constant-binary-expression`](https://eslint.org/docs/latest/rules/no-constant-binary-expression)                                                    | ✔️     |    | 🟩    |        |       |
+| [`no-constant-condition`](https://eslint.org/docs/latest/rules/no-constant-condition)                                                                    | ✔️     |    | 🟩    |        |       |
 | [`no-constructor-return`](https://eslint.org/docs/latest/rules/no-constructor-return)                                                                    |        |    |       |        |       |
 | [`no-continue`](https://eslint.org/docs/latest/rules/no-continue)                                                                                        |        |    |       |        |       |
-| [`no-control-regex`](https://eslint.org/docs/latest/rules/no-control-regex)                                                                              | ✔️     |    |       |        |       |
-| [`no-debugger`](https://eslint.org/docs/latest/rules/no-debugger)                                                                                        | ✔️     |    |       |        |       |
-| [`no-delete-var`](https://eslint.org/docs/latest/rules/no-delete-var)                                                                                    | ✔️     |    |       |        |       |
+| [`no-control-regex`](https://eslint.org/docs/latest/rules/no-control-regex)                                                                              | ✔️     |    | 🟩    |        |       |
+| [`no-debugger`](https://eslint.org/docs/latest/rules/no-debugger)                                                                                        | ✔️     |    | 🟩    |        |       |
+| [`no-delete-var`](https://eslint.org/docs/latest/rules/no-delete-var)                                                                                    | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-deprecated`](https://typescript-eslint.io/rules/no-deprecated)                                                                                  |        | 💭 |       | 🔵     |       |
 | [`no-div-regex`](https://eslint.org/docs/latest/rules/no-div-regex)                                                                                      |        |    |       |        |       |
-| [`no-dupe-args`](https://eslint.org/docs/latest/rules/no-dupe-args)                                                                                      |        |    |       |        |       |
-| [`no-dupe-class-members`](https://eslint.org/docs/latest/rules/no-dupe-class-members)                                                                    |        |    |       |        |       |
+| [`no-dupe-args`](https://eslint.org/docs/latest/rules/no-dupe-args)                                                                                      |        |    | 🟩    |        |       |
+| [`no-dupe-class-members`](https://eslint.org/docs/latest/rules/no-dupe-class-members)                                                                    |        |    | 🟩    |        |       |
 | [`@ts/no-dupe-class-members`🧱](https://typescript-eslint.io/rules/no-dupe-class-members)                                                                |        |    |       |        |       |
-| [`no-dupe-else-if`](https://eslint.org/docs/latest/rules/no-dupe-else-if)                                                                                | ✔️     |    |       |        |       |
-| [`no-dupe-keys`](https://eslint.org/docs/latest/rules/no-dupe-keys)                                                                                      |        |    |       |        |       |
-| [`no-duplicate-case`](https://eslint.org/docs/latest/rules/no-duplicate-case)                                                                            | ✔️     |    |       |        |       |
+| [`no-dupe-else-if`](https://eslint.org/docs/latest/rules/no-dupe-else-if)                                                                                | ✔️     |    | 🟩    |        |       |
+| [`no-dupe-keys`](https://eslint.org/docs/latest/rules/no-dupe-keys)                                                                                      |        |    | 🟩    |        |       |
+| [`no-duplicate-case`](https://eslint.org/docs/latest/rules/no-duplicate-case)                                                                            | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-duplicate-enum-values`](https://typescript-eslint.io/rules/no-duplicate-enum-values)                                                            | ✔️     |    | 🟩    |        |       |
 | [`no-duplicate-imports`](https://eslint.org/docs/latest/rules/no-duplicate-imports)                                                                      |        |    |       |        |       |
 | [`@ts/no-duplicate-type-constituents`](https://typescript-eslint.io/rules/no-duplicate-type-constituents)                                                | ✔️     | 💭 | 🟩    |        |       |
 | [`@ts/no-dynamic-delete`](https://typescript-eslint.io/rules/no-dynamic-delete)                                                                          |        |    |       | 🔵     |       |
 | [`no-else-return`](https://eslint.org/docs/latest/rules/no-else-return)                                                                                  |        |    |       |        |       |
-| [`no-empty`](https://eslint.org/docs/latest/rules/no-empty)                                                                                              | ✔️     |    |       |        |       |
-| [`no-empty-character-class`](https://eslint.org/docs/latest/rules/no-empty-character-class)                                                              | ✔️     |    |       |        |       |
+| [`no-empty`](https://eslint.org/docs/latest/rules/no-empty)                                                                                              | ✔️     |    | 🟩    |        |       |
+| [`no-empty-character-class`](https://eslint.org/docs/latest/rules/no-empty-character-class)                                                              | ✔️     |    | 🟩    |        |       |
 | [`no-empty-function`](https://eslint.org/docs/latest/rules/no-empty-function)                                                                            |        |    |       |        |       |
 | [`@ts/no-empty-function`🧱](https://typescript-eslint.io/rules/no-empty-function)                                                                        |        |    |       |        | 🔸    |
 | [`@ts/no-empty-interface`💀](https://typescript-eslint.io/rules/no-empty-interface)                                                                      |        |    |       |        |       |
 | [`@ts/no-empty-object-type`](https://typescript-eslint.io/rules/no-empty-object-type)                                                                    | ✔️     |    | 🟩    |        |       |
-| [`no-empty-pattern`](https://eslint.org/docs/latest/rules/no-empty-pattern)                                                                              | ✔️     |    |       |        |       |
-| [`no-empty-static-block`](https://eslint.org/docs/latest/rules/no-empty-static-block)                                                                    | ✔️     |    |       |        |       |
+| [`no-empty-pattern`](https://eslint.org/docs/latest/rules/no-empty-pattern)                                                                              | ✔️     |    | 🟩    |        |       |
+| [`no-empty-static-block`](https://eslint.org/docs/latest/rules/no-empty-static-block)                                                                    | ✔️     |    | 🟩    |        |       |
 | [`no-eq-null`](https://eslint.org/docs/latest/rules/no-eq-null)                                                                                          |        |    |       |        |       |
 | [`no-eval`](https://eslint.org/docs/latest/rules/no-eval)                                                                                                |        |    |       |        |       |
-| [`no-ex-assign`](https://eslint.org/docs/latest/rules/no-ex-assign)                                                                                      | ✔️     |    |       |        |       |
+| [`no-ex-assign`](https://eslint.org/docs/latest/rules/no-ex-assign)                                                                                      | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-explicit-any`](https://typescript-eslint.io/rules/no-explicit-any)                                                                              | ✔️     |    | 🟩    |        |       |
 | [`no-extend-native`](https://eslint.org/docs/latest/rules/no-extend-native)                                                                              |        |    |       |        |       |
 | [`no-extra-bind`](https://eslint.org/docs/latest/rules/no-extra-bind)                                                                                    |        |    |       |        |       |
-| [`no-extra-boolean-cast`](https://eslint.org/docs/latest/rules/no-extra-boolean-cast)                                                                    | ✔️     |    |       |        |       |
+| [`no-extra-boolean-cast`](https://eslint.org/docs/latest/rules/no-extra-boolean-cast)                                                                    | ✔️     |    | 🟩    |        |       |
 | [`no-extra-label`](https://eslint.org/docs/latest/rules/no-extra-label)                                                                                  |        |    |       |        |       |
 | [`@ts/no-extra-non-null-assertion`](https://typescript-eslint.io/rules/no-extra-non-null-assertion)                                                      | ✔️     |    | 🟩    |        |       |
 | [`no-extra-parens`💀](https://eslint.org/docs/latest/rules/no-extra-parens)                                                                              |        |    |       |        |       |
 | [`no-extra-semi`💀](https://eslint.org/docs/latest/rules/no-extra-semi)                                                                                  |        |    |       |        |       |
 | [`@ts/no-extraneous-class`](https://typescript-eslint.io/rules/no-extraneous-class)                                                                      |        |    |       | 🔵     |       |
-| [`no-fallthrough`](https://eslint.org/docs/latest/rules/no-fallthrough)                                                                                  | ✔️     |    |       |        |       |
+| [`no-fallthrough`](https://eslint.org/docs/latest/rules/no-fallthrough)                                                                                  | ✔️     |    | 🟩    |        |       |
 | [`no-floating-decimal`💀](https://eslint.org/docs/latest/rules/no-floating-decimal)                                                                      |        |    |       |        |       |
 | [`@ts/no-floating-promises`](https://typescript-eslint.io/rules/no-floating-promises)                                                                    | ✔️     | 💭 | 🟩    |        |       |
 | [`@ts/no-for-in-array`](https://typescript-eslint.io/rules/no-for-in-array)                                                                              | ✔️     | 💭 | 🟩    |        |       |
-| [`no-func-assign`](https://eslint.org/docs/latest/rules/no-func-assign)                                                                                  |        |    |       |        |       |
-| [`no-global-assign`](https://eslint.org/docs/latest/rules/no-global-assign)                                                                              | ✔️     |    |       |        |       |
+| [`no-func-assign`](https://eslint.org/docs/latest/rules/no-func-assign)                                                                                  |        |    | 🟩    |        |       |
+| [`no-global-assign`](https://eslint.org/docs/latest/rules/no-global-assign)                                                                              | ✔️     |    | 🟩    |        |       |
 | [`no-implicit-coercion`](https://eslint.org/docs/latest/rules/no-implicit-coercion)                                                                      |        |    |       |        |       |
 | [`no-implicit-globals`](https://eslint.org/docs/latest/rules/no-implicit-globals)                                                                        |        |    |       |        |       |
 | [`no-implied-eval`](https://eslint.org/docs/latest/rules/no-implied-eval)                                                                                |        |    |       |        |       |
 | [`@ts/no-implied-eval`🧱](https://typescript-eslint.io/rules/no-implied-eval)                                                                            | ✔️     | 💭 | 🟩    |        |       |
-| [`no-import-assign`](https://eslint.org/docs/latest/rules/no-import-assign)                                                                              |        |    |       |        |       |
+| [`no-import-assign`](https://eslint.org/docs/latest/rules/no-import-assign)                                                                              |        |    | 🟩    |        |       |
 | [`@ts/no-import-type-side-effects`](https://typescript-eslint.io/rules/no-import-type-side-effects)                                                      |        |    |       |        |       |
 | [`@ts/no-inferrable-types`](https://typescript-eslint.io/rules/no-inferrable-types)                                                                      |        |    |       |        | 🔸    |
 | [`no-inline-comments`](https://eslint.org/docs/latest/rules/no-inline-comments)                                                                          |        |    |       |        |       |
 | [`no-inner-declarations`](https://eslint.org/docs/latest/rules/no-inner-declarations)                                                                    |        |    |       |        |       |
-| [`no-invalid-regexp`](https://eslint.org/docs/latest/rules/no-invalid-regexp)                                                                            | ✔️     |    |       |        |       |
+| [`no-invalid-regexp`](https://eslint.org/docs/latest/rules/no-invalid-regexp)                                                                            | ✔️     |    | 🟩    |        |       |
 | [`no-invalid-this`](https://eslint.org/docs/latest/rules/no-invalid-this)                                                                                |        |    |       |        |       |
 | [`@ts/no-invalid-this`🧱](https://typescript-eslint.io/rules/no-invalid-this)                                                                            |        |    |       |        |       |
 | [`@ts/no-invalid-void-type`](https://typescript-eslint.io/rules/no-invalid-void-type)                                                                    |        |    |       | 🔵     |       |
-| [`no-irregular-whitespace`](https://eslint.org/docs/latest/rules/no-irregular-whitespace)                                                                | ✔️     |    |       |        |       |
+| [`no-irregular-whitespace`](https://eslint.org/docs/latest/rules/no-irregular-whitespace)                                                                | ✔️     |    | 🟩    |        |       |
 | [`no-iterator`](https://eslint.org/docs/latest/rules/no-iterator)                                                                                        |        |    |       |        |       |
 | [`no-label-var`](https://eslint.org/docs/latest/rules/no-label-var)                                                                                      |        |    |       |        |       |
 | [`no-labels`](https://eslint.org/docs/latest/rules/no-labels)                                                                                            |        |    |       |        |       |
@@ -310,12 +311,12 @@ Has TS extension rules: 0
 | [`no-lonely-if`](https://eslint.org/docs/latest/rules/no-lonely-if)                                                                                      |        |    |       |        |       |
 | [`no-loop-func`](https://eslint.org/docs/latest/rules/no-loop-func)                                                                                      |        |    |       |        |       |
 | [`@ts/no-loop-func`🧱](https://typescript-eslint.io/rules/no-loop-func)                                                                                  |        |    |       |        |       |
-| [`no-loss-of-precision`](https://eslint.org/docs/latest/rules/no-loss-of-precision)                                                                      | ✔️     |    |       |        |       |
+| [`no-loss-of-precision`](https://eslint.org/docs/latest/rules/no-loss-of-precision)                                                                      | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-loss-of-precision`💀🧱](https://typescript-eslint.io/rules/no-loss-of-precision)                                                                |        |    |       |        |       |
 | [`no-magic-numbers`](https://eslint.org/docs/latest/rules/no-magic-numbers)                                                                              |        |    |       |        |       |
 | [`@ts/no-magic-numbers`🧱](https://typescript-eslint.io/rules/no-magic-numbers)                                                                          |        |    |       |        |       |
 | [`@ts/no-meaningless-void-operator`](https://typescript-eslint.io/rules/no-meaningless-void-operator)                                                    |        | 💭 |       | 🔵     |       |
-| [`no-misleading-character-class`](https://eslint.org/docs/latest/rules/no-misleading-character-class)                                                    | ✔️     |    |       |        |       |
+| [`no-misleading-character-class`](https://eslint.org/docs/latest/rules/no-misleading-character-class)                                                    | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-misused-new`](https://typescript-eslint.io/rules/no-misused-new)                                                                                | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-misused-promises`](https://typescript-eslint.io/rules/no-misused-promises)                                                                      | ✔️     | 💭 | 🟩    |        |       |
 | [`@ts/no-misused-spread`](https://typescript-eslint.io/rules/no-misused-spread)                                                                          |        | 💭 |       | 🔵     |       |
@@ -334,7 +335,7 @@ Has TS extension rules: 0
 | [`no-nested-ternary`](https://eslint.org/docs/latest/rules/no-nested-ternary)                                                                            |        |    |       |        |       |
 | [`no-new`](https://eslint.org/docs/latest/rules/no-new)                                                                                                  |        |    |       |        |       |
 | [`no-new-func`](https://eslint.org/docs/latest/rules/no-new-func)                                                                                        |        |    |       |        |       |
-| [`no-new-native-nonconstructor`](https://eslint.org/docs/latest/rules/no-new-native-nonconstructor)                                                      |        |    |       |        |       |
+| [`no-new-native-nonconstructor`](https://eslint.org/docs/latest/rules/no-new-native-nonconstructor)                                                      |        |    | 🟩    |        |       |
 | [`no-new-object`💀](https://eslint.org/docs/latest/rules/no-new-object)                                                                                  |        |    |       |        |       |
 | [`no-new-require`💀](https://eslint.org/docs/latest/rules/no-new-require)                                                                                |        |    |       |        |       |
 | [`no-new-symbol`💀](https://eslint.org/docs/latest/rules/no-new-symbol)                                                                                  |        |    |       |        |       |
@@ -342,10 +343,10 @@ Has TS extension rules: 0
 | [`@ts/no-non-null-asserted-nullish-coalescing`](https://typescript-eslint.io/rules/no-non-null-asserted-nullish-coalescing)                              |        |    |       | 🔵     |       |
 | [`@ts/no-non-null-asserted-optional-chain`](https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain)                                      | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-non-null-assertion`](https://typescript-eslint.io/rules/no-non-null-assertion)                                                                  |        |    |       | 🔵     |       |
-| [`no-nonoctal-decimal-escape`](https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape)                                                          | ✔️     |    |       |        |       |
-| [`no-obj-calls`](https://eslint.org/docs/latest/rules/no-obj-calls)                                                                                      |        |    |       |        |       |
+| [`no-nonoctal-decimal-escape`](https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape)                                                          | ✔️     |    | 🟩    |        |       |
+| [`no-obj-calls`](https://eslint.org/docs/latest/rules/no-obj-calls)                                                                                      |        |    | 🟩    |        |       |
 | [`no-object-constructor`](https://eslint.org/docs/latest/rules/no-object-constructor)                                                                    |        |    |       |        |       |
-| [`no-octal`](https://eslint.org/docs/latest/rules/no-octal)                                                                                              | ✔️     |    |       |        |       |
+| [`no-octal`](https://eslint.org/docs/latest/rules/no-octal)                                                                                              | ✔️     |    | 🟩    |        |       |
 | [`no-octal-escape`](https://eslint.org/docs/latest/rules/no-octal-escape)                                                                                |        |    |       |        |       |
 | [`no-param-reassign`](https://eslint.org/docs/latest/rules/no-param-reassign)                                                                            |        |    |       |        |       |
 | [`no-path-concat`💀](https://eslint.org/docs/latest/rules/no-path-concat)                                                                                |        |    |       |        |       |
@@ -354,11 +355,11 @@ Has TS extension rules: 0
 | [`no-process-exit`💀](https://eslint.org/docs/latest/rules/no-process-exit)                                                                              |        |    |       |        |       |
 | [`no-promise-executor-return`](https://eslint.org/docs/latest/rules/no-promise-executor-return)                                                          |        |    |       |        |       |
 | [`no-proto`](https://eslint.org/docs/latest/rules/no-proto)                                                                                              |        |    |       |        |       |
-| [`no-prototype-builtins`](https://eslint.org/docs/latest/rules/no-prototype-builtins)                                                                    | ✔️     |    |       |        |       |
-| [`no-redeclare`](https://eslint.org/docs/latest/rules/no-redeclare)                                                                                      |        |    |       |        |       |
+| [`no-prototype-builtins`](https://eslint.org/docs/latest/rules/no-prototype-builtins)                                                                    | ✔️     |    | 🟩    |        |       |
+| [`no-redeclare`](https://eslint.org/docs/latest/rules/no-redeclare)                                                                                      |        |    | 🟩    |        |       |
 | [`@ts/no-redeclare`🧱](https://typescript-eslint.io/rules/no-redeclare)                                                                                  |        |    |       |        |       |
 | [`@ts/no-redundant-type-constituents`](https://typescript-eslint.io/rules/no-redundant-type-constituents)                                                | ✔️     | 💭 | 🟩    |        |       |
-| [`no-regex-spaces`](https://eslint.org/docs/latest/rules/no-regex-spaces)                                                                                | ✔️     |    |       |        |       |
+| [`no-regex-spaces`](https://eslint.org/docs/latest/rules/no-regex-spaces)                                                                                | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-require-imports`](https://typescript-eslint.io/rules/no-require-imports)                                                                        | ✔️     |    | 🟩    |        |       |
 | [`no-restricted-exports`](https://eslint.org/docs/latest/rules/no-restricted-exports)                                                                    |        |    |       |        |       |
 | [`no-restricted-globals`](https://eslint.org/docs/latest/rules/no-restricted-globals)                                                                    |        |    |       |        |       |
@@ -371,29 +372,30 @@ Has TS extension rules: 0
 | [`no-return-assign`](https://eslint.org/docs/latest/rules/no-return-assign)                                                                              |        |    |       |        |       |
 | [`no-return-await`💀](https://eslint.org/docs/latest/rules/no-return-await)                                                                              |        |    |       |        |       |
 | [`no-script-url`](https://eslint.org/docs/latest/rules/no-script-url)                                                                                    |        |    |       |        |       |
-| [`no-self-assign`](https://eslint.org/docs/latest/rules/no-self-assign)                                                                                  | ✔️     |    |       |        |       |
+| [`no-self-assign`](https://eslint.org/docs/latest/rules/no-self-assign)                                                                                  | ✔️     |    | 🟩    |        |       |
 | [`no-self-compare`](https://eslint.org/docs/latest/rules/no-self-compare)                                                                                |        |    |       |        |       |
 | [`no-sequences`](https://eslint.org/docs/latest/rules/no-sequences)                                                                                      |        |    |       |        |       |
-| [`no-setter-return`](https://eslint.org/docs/latest/rules/no-setter-return)                                                                              |        |    |       |        |       |
+| [`no-setter-return`](https://eslint.org/docs/latest/rules/no-setter-return)                                                                              |        |    | 🟩    |        |       |
 | [`no-shadow`](https://eslint.org/docs/latest/rules/no-shadow)                                                                                            |        |    |       |        |       |
 | [`@ts/no-shadow`🧱](https://typescript-eslint.io/rules/no-shadow)                                                                                        |        |    |       |        |       |
-| [`no-shadow-restricted-names`](https://eslint.org/docs/latest/rules/no-shadow-restricted-names)                                                          | ✔️     |    |       |        |       |
+| [`no-shadow-restricted-names`](https://eslint.org/docs/latest/rules/no-shadow-restricted-names)                                                          | ✔️     |    | 🟩    |        |       |
 | [`no-spaced-func`💀](https://eslint.org/docs/latest/rules/no-spaced-func)                                                                                |        |    |       |        |       |
-| [`no-sparse-arrays`](https://eslint.org/docs/latest/rules/no-sparse-arrays)                                                                              | ✔️     |    |       |        |       |
+| [`no-sparse-arrays`](https://eslint.org/docs/latest/rules/no-sparse-arrays)                                                                              | ✔️     |    | 🟩    |        |       |
 | [`no-sync`💀](https://eslint.org/docs/latest/rules/no-sync)                                                                                              |        |    |       |        |       |
 | [`no-tabs`💀](https://eslint.org/docs/latest/rules/no-tabs)                                                                                              |        |    |       |        |       |
 | [`no-template-curly-in-string`](https://eslint.org/docs/latest/rules/no-template-curly-in-string)                                                        |        |    |       |        |       |
 | [`no-ternary`](https://eslint.org/docs/latest/rules/no-ternary)                                                                                          |        |    |       |        |       |
 | [`@ts/no-this-alias`](https://typescript-eslint.io/rules/no-this-alias)                                                                                  | ✔️     |    | 🟩    |        |       |
-| [`no-this-before-super`](https://eslint.org/docs/latest/rules/no-this-before-super)                                                                      |        |    |       |        |       |
+| [`no-this-before-super`](https://eslint.org/docs/latest/rules/no-this-before-super)                                                                      |        |    | 🟩    |        |       |
 | [`no-throw-literal`](https://eslint.org/docs/latest/rules/no-throw-literal)                                                                              |        |    |       |        |       |
 | [`no-trailing-spaces`💀](https://eslint.org/docs/latest/rules/no-trailing-spaces)                                                                        |        |    |       |        |       |
 | [`@ts/no-type-alias`💀](https://typescript-eslint.io/rules/no-type-alias)                                                                                |        |    |       |        |       |
-| [`no-undef`](https://eslint.org/docs/latest/rules/no-undef)                                                                                              |        |    |       |        |       |
+| [`no-unassigned-vars`](https://eslint.org/docs/latest/rules/no-unassigned-vars)                                                                          |        |    |       |        |       |
+| [`no-undef`](https://eslint.org/docs/latest/rules/no-undef)                                                                                              |        |    | 🟩    |        |       |
 | [`no-undef-init`](https://eslint.org/docs/latest/rules/no-undef-init)                                                                                    |        |    |       |        |       |
 | [`no-undefined`](https://eslint.org/docs/latest/rules/no-undefined)                                                                                      |        |    |       |        |       |
 | [`no-underscore-dangle`](https://eslint.org/docs/latest/rules/no-underscore-dangle)                                                                      |        |    |       |        |       |
-| [`no-unexpected-multiline`](https://eslint.org/docs/latest/rules/no-unexpected-multiline)                                                                | ✔️     |    |       |        |       |
+| [`no-unexpected-multiline`](https://eslint.org/docs/latest/rules/no-unexpected-multiline)                                                                | ✔️     |    | 🟩    |        |       |
 | [`no-unmodified-loop-condition`](https://eslint.org/docs/latest/rules/no-unmodified-loop-condition)                                                      |        |    |       |        |       |
 | [`@ts/no-unnecessary-boolean-literal-compare`](https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare)                                |        | 💭 |       | 🔵     |       |
 | [`@ts/no-unnecessary-condition`](https://typescript-eslint.io/rules/no-unnecessary-condition)                                                            |        | 💭 |       | 🔵     |       |
@@ -403,41 +405,44 @@ Has TS extension rules: 0
 | [`@ts/no-unnecessary-type-arguments`](https://typescript-eslint.io/rules/no-unnecessary-type-arguments)                                                  |        | 💭 |       | 🔵     |       |
 | [`@ts/no-unnecessary-type-assertion`](https://typescript-eslint.io/rules/no-unnecessary-type-assertion)                                                  | ✔️     | 💭 | 🟩    |        |       |
 | [`@ts/no-unnecessary-type-constraint`](https://typescript-eslint.io/rules/no-unnecessary-type-constraint)                                                | ✔️     |    | 🟩    |        |       |
+| [`@ts/no-unnecessary-type-conversion`](https://typescript-eslint.io/rules/no-unnecessary-type-conversion)                                                |        | 💭 |       | 🔵     |       |
 | [`@ts/no-unnecessary-type-parameters`](https://typescript-eslint.io/rules/no-unnecessary-type-parameters)                                                |        | 💭 |       | 🔵     |       |
 | [`no-unneeded-ternary`](https://eslint.org/docs/latest/rules/no-unneeded-ternary)                                                                        |        |    |       |        |       |
-| [`no-unreachable`](https://eslint.org/docs/latest/rules/no-unreachable)                                                                                  |        |    |       |        |       |
+| [`no-unreachable`](https://eslint.org/docs/latest/rules/no-unreachable)                                                                                  |        |    | 🟩    |        |       |
 | [`no-unreachable-loop`](https://eslint.org/docs/latest/rules/no-unreachable-loop)                                                                        |        |    |       |        |       |
 | [`@ts/no-unsafe-argument`](https://typescript-eslint.io/rules/no-unsafe-argument)                                                                        | ✔️     | 💭 | 🟩    |        |       |
 | [`@ts/no-unsafe-assignment`](https://typescript-eslint.io/rules/no-unsafe-assignment)                                                                    | ✔️     | 💭 | 🟩    |        |       |
 | [`@ts/no-unsafe-call`](https://typescript-eslint.io/rules/no-unsafe-call)                                                                                | ✔️     | 💭 | 🟩    |        |       |
 | [`@ts/no-unsafe-declaration-merging`](https://typescript-eslint.io/rules/no-unsafe-declaration-merging)                                                  | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-unsafe-enum-comparison`](https://typescript-eslint.io/rules/no-unsafe-enum-comparison)                                                          | ✔️     | 💭 | 🟩    |        |       |
-| [`no-unsafe-finally`](https://eslint.org/docs/latest/rules/no-unsafe-finally)                                                                            | ✔️     |    |       |        |       |
+| [`no-unsafe-finally`](https://eslint.org/docs/latest/rules/no-unsafe-finally)                                                                            | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-unsafe-function-type`](https://typescript-eslint.io/rules/no-unsafe-function-type)                                                              | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-unsafe-member-access`](https://typescript-eslint.io/rules/no-unsafe-member-access)                                                              | ✔️     | 💭 | 🟩    |        |       |
-| [`no-unsafe-negation`](https://eslint.org/docs/latest/rules/no-unsafe-negation)                                                                          |        |    |       |        |       |
-| [`no-unsafe-optional-chaining`](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining)                                                        | ✔️     |    |       |        |       |
+| [`no-unsafe-negation`](https://eslint.org/docs/latest/rules/no-unsafe-negation)                                                                          |        |    | 🟩    |        |       |
+| [`no-unsafe-optional-chaining`](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining)                                                        | ✔️     |    | 🟩    |        |       |
 | [`@ts/no-unsafe-return`](https://typescript-eslint.io/rules/no-unsafe-return)                                                                            | ✔️     | 💭 | 🟩    |        |       |
 | [`@ts/no-unsafe-type-assertion`](https://typescript-eslint.io/rules/no-unsafe-type-assertion)                                                            |        | 💭 |       |        |       |
 | [`@ts/no-unsafe-unary-minus`](https://typescript-eslint.io/rules/no-unsafe-unary-minus)                                                                  | ✔️     | 💭 | 🟩    |        |       |
 | [`no-unused-expressions`](https://eslint.org/docs/latest/rules/no-unused-expressions)                                                                    |        |    |       |        |       |
 | [`@ts/no-unused-expressions`🧱](https://typescript-eslint.io/rules/no-unused-expressions)                                                                | ✔️     |    | 🟩    |        |       |
-| [`no-unused-labels`](https://eslint.org/docs/latest/rules/no-unused-labels)                                                                              | ✔️     |    |       |        |       |
-| [`no-unused-private-class-members`](https://eslint.org/docs/latest/rules/no-unused-private-class-members)                                                | ✔️     |    |       |        |       |
-| [`no-unused-vars`](https://eslint.org/docs/latest/rules/no-unused-vars)                                                                                  |        |    |       |        |       |
+| [`no-unused-labels`](https://eslint.org/docs/latest/rules/no-unused-labels)                                                                              | ✔️     |    | 🟩    |        |       |
+| [`no-unused-private-class-members`](https://eslint.org/docs/latest/rules/no-unused-private-class-members)                                                | ✔️     |    | 🟩    |        |       |
+| [`@ts/no-unused-private-class-members`🧱](https://typescript-eslint.io/rules/no-unused-private-class-members)                                            |        |    |       |        |       |
+| [`no-unused-vars`](https://eslint.org/docs/latest/rules/no-unused-vars)                                                                                  |        |    | 🟩    |        |       |
 | [`@ts/no-unused-vars`🧱](https://typescript-eslint.io/rules/no-unused-vars)                                                                              | ✔️     |    | 🟩    |        |       |
 | [`no-use-before-define`](https://eslint.org/docs/latest/rules/no-use-before-define)                                                                      |        |    |       |        |       |
 | [`@ts/no-use-before-define`🧱](https://typescript-eslint.io/rules/no-use-before-define)                                                                  |        |    |       |        |       |
 | [`no-useless-assignment`](https://eslint.org/docs/latest/rules/no-useless-assignment)                                                                    |        |    |       |        |       |
-| [`no-useless-backreference`](https://eslint.org/docs/latest/rules/no-useless-backreference)                                                              | ✔️     |    |       |        |       |
+| [`no-useless-backreference`](https://eslint.org/docs/latest/rules/no-useless-backreference)                                                              | ✔️     |    | 🟩    |        |       |
 | [`no-useless-call`](https://eslint.org/docs/latest/rules/no-useless-call)                                                                                |        |    |       |        |       |
-| [`no-useless-catch`](https://eslint.org/docs/latest/rules/no-useless-catch)                                                                              | ✔️     |    |       |        |       |
+| [`no-useless-catch`](https://eslint.org/docs/latest/rules/no-useless-catch)                                                                              | ✔️     |    | 🟩    |        |       |
 | [`no-useless-computed-key`](https://eslint.org/docs/latest/rules/no-useless-computed-key)                                                                |        |    |       |        |       |
 | [`no-useless-concat`](https://eslint.org/docs/latest/rules/no-useless-concat)                                                                            |        |    |       |        |       |
 | [`no-useless-constructor`](https://eslint.org/docs/latest/rules/no-useless-constructor)                                                                  |        |    |       |        |       |
 | [`@ts/no-useless-constructor`🧱](https://typescript-eslint.io/rules/no-useless-constructor)                                                              |        |    |       | 🔵     |       |
+| [`@ts/no-useless-default-assignment`](https://typescript-eslint.io/rules/no-useless-default-assignment)                                                  |        | 💭 |       | 🔵     |       |
 | [`@ts/no-useless-empty-export`](https://typescript-eslint.io/rules/no-useless-empty-export)                                                              |        |    |       |        |       |
-| [`no-useless-escape`](https://eslint.org/docs/latest/rules/no-useless-escape)                                                                            | ✔️     |    |       |        |       |
+| [`no-useless-escape`](https://eslint.org/docs/latest/rules/no-useless-escape)                                                                            | ✔️     |    | 🟩    |        |       |
 | [`no-useless-rename`](https://eslint.org/docs/latest/rules/no-useless-rename)                                                                            |        |    |       |        |       |
 | [`no-useless-return`](https://eslint.org/docs/latest/rules/no-useless-return)                                                                            |        |    |       |        |       |
 | [`no-var`](https://eslint.org/docs/latest/rules/no-var)                                                                                                  | ✔️     |    |       |        |       |
@@ -445,7 +450,7 @@ Has TS extension rules: 0
 | [`no-void`](https://eslint.org/docs/latest/rules/no-void)                                                                                                |        |    |       |        |       |
 | [`no-warning-comments`](https://eslint.org/docs/latest/rules/no-warning-comments)                                                                        |        |    |       |        |       |
 | [`no-whitespace-before-property`💀](https://eslint.org/docs/latest/rules/no-whitespace-before-property)                                                  |        |    |       |        |       |
-| [`no-with`](https://eslint.org/docs/latest/rules/no-with)                                                                                                | ✔️     |    |       |        |       |
+| [`no-with`](https://eslint.org/docs/latest/rules/no-with)                                                                                                |        |    | 🟩    |        |       |
 | [`@ts/no-wrapper-object-types`](https://typescript-eslint.io/rules/no-wrapper-object-types)                                                              | ✔️     |    | 🟩    |        |       |
 | [`@ts/non-nullable-type-assertion-style`](https://typescript-eslint.io/rules/non-nullable-type-assertion-style)                                          |        | 💭 |       |        | 🔸    |
 | [`nonblock-statement-body-position`💀](https://eslint.org/docs/latest/rules/nonblock-statement-body-position)                                            |        |    |       |        |       |
@@ -494,6 +499,7 @@ Has TS extension rules: 0
 | [`@ts/prefer-string-starts-ends-with`](https://typescript-eslint.io/rules/prefer-string-starts-ends-with)                                                |        | 💭 |       |        | 🔸    |
 | [`prefer-template`](https://eslint.org/docs/latest/rules/prefer-template)                                                                                |        |    |       |        |       |
 | [`@ts/prefer-ts-expect-error`💀](https://typescript-eslint.io/rules/prefer-ts-expect-error)                                                              |        |    |       |        |       |
+| [`preserve-caught-error`](https://eslint.org/docs/latest/rules/preserve-caught-error)                                                                    |        |    |       |        |       |
 | [`@ts/promise-function-async`](https://typescript-eslint.io/rules/promise-function-async)                                                                |        | 💭 |       |        |       |
 | [`quote-props`💀](https://eslint.org/docs/latest/rules/quote-props)                                                                                      |        |    |       |        |       |
 | [`quotes`💀](https://eslint.org/docs/latest/rules/quotes)                                                                                                |        |    |       |        |       |
@@ -504,7 +510,7 @@ Has TS extension rules: 0
 | [`require-await`](https://eslint.org/docs/latest/rules/require-await)                                                                                    |        |    |       |        |       |
 | [`@ts/require-await`🧱](https://typescript-eslint.io/rules/require-await)                                                                                | ✔️     | 💭 | 🟩    |        |       |
 | [`require-unicode-regexp`](https://eslint.org/docs/latest/rules/require-unicode-regexp)                                                                  |        |    |       |        |       |
-| [`require-yield`](https://eslint.org/docs/latest/rules/require-yield)                                                                                    | ✔️     |    |       |        |       |
+| [`require-yield`](https://eslint.org/docs/latest/rules/require-yield)                                                                                    | ✔️     |    | 🟩    |        |       |
 | [`rest-spread-spacing`💀](https://eslint.org/docs/latest/rules/rest-spread-spacing)                                                                      |        |    |       |        |       |
 | [`@ts/restrict-plus-operands`](https://typescript-eslint.io/rules/restrict-plus-operands)                                                                | ✔️     | 💭 | 🟩    |        |       |
 | [`@ts/restrict-template-expressions`](https://typescript-eslint.io/rules/restrict-template-expressions)                                                  | ✔️     | 💭 | 🟩    |        |       |
@@ -524,19 +530,20 @@ Has TS extension rules: 0
 | [`spaced-comment`💀](https://eslint.org/docs/latest/rules/spaced-comment)                                                                                |        |    |       |        |       |
 | [`strict`](https://eslint.org/docs/latest/rules/strict)                                                                                                  |        |    |       |        |       |
 | [`@ts/strict-boolean-expressions`](https://typescript-eslint.io/rules/strict-boolean-expressions)                                                        |        | 💭 |       |        |       |
+| [`@ts/strict-void-return`](https://typescript-eslint.io/rules/strict-void-return)                                                                        |        | 💭 |       |        |       |
 | [`switch-colon-spacing`💀](https://eslint.org/docs/latest/rules/switch-colon-spacing)                                                                    |        |    |       |        |       |
 | [`@ts/switch-exhaustiveness-check`](https://typescript-eslint.io/rules/switch-exhaustiveness-check)                                                      |        | 💭 |       |        |       |
 | [`symbol-description`](https://eslint.org/docs/latest/rules/symbol-description)                                                                          |        |    |       |        |       |
 | [`template-curly-spacing`💀](https://eslint.org/docs/latest/rules/template-curly-spacing)                                                                |        |    |       |        |       |
 | [`template-tag-spacing`💀](https://eslint.org/docs/latest/rules/template-tag-spacing)                                                                    |        |    |       |        |       |
 | [`@ts/triple-slash-reference`](https://typescript-eslint.io/rules/triple-slash-reference)                                                                | ✔️     |    | 🟩    |        |       |
-| [`@ts/typedef`](https://typescript-eslint.io/rules/typedef)                                                                                              |        |    |       |        |       |
+| [`@ts/typedef`💀](https://typescript-eslint.io/rules/typedef)                                                                                            |        |    |       |        |       |
 | [`@ts/unbound-method`](https://typescript-eslint.io/rules/unbound-method)                                                                                | ✔️     | 💭 | 🟩    |        |       |
 | [`unicode-bom`](https://eslint.org/docs/latest/rules/unicode-bom)                                                                                        |        |    |       |        |       |
 | [`@ts/unified-signatures`](https://typescript-eslint.io/rules/unified-signatures)                                                                        |        |    |       | 🔵     |       |
-| [`use-isnan`](https://eslint.org/docs/latest/rules/use-isnan)                                                                                            | ✔️     |    |       |        |       |
+| [`use-isnan`](https://eslint.org/docs/latest/rules/use-isnan)                                                                                            | ✔️     |    | 🟩    |        |       |
 | [`@ts/use-unknown-in-catch-callback-variable`](https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable)                                |        | 💭 |       | 🔵     |       |
-| [`valid-typeof`](https://eslint.org/docs/latest/rules/valid-typeof)                                                                                      | ✔️     |    |       |        |       |
+| [`valid-typeof`](https://eslint.org/docs/latest/rules/valid-typeof)                                                                                      | ✔️     |    | 🟩    |        |       |
 | [`vars-on-top`](https://eslint.org/docs/latest/rules/vars-on-top)                                                                                        |        |    |       |        |       |
 | [`wrap-iife`💀](https://eslint.org/docs/latest/rules/wrap-iife)                                                                                          |        |    |       |        |       |
 | [`wrap-regex`💀](https://eslint.org/docs/latest/rules/wrap-regex)                                                                                        |        |    |       |        |       |
