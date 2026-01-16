@@ -1,11 +1,11 @@
 import { markdownTable } from 'markdown-table';
 
 import { builtinRules as eslintRules } from "eslint/use-at-your-own-risk";
-import { rules as tseslintRules} from '@typescript-eslint/eslint-plugin';
+import tseslintRules from '@typescript-eslint/eslint-plugin';
 import { rules as importRules } from 'eslint-plugin-import';
 
-const allRules = Object.keys(tseslintRules).sort().reduce((obj, key) => {
-  obj[`@ts/${key}`] = tseslintRules[key];
+const allRules = Object.keys(tseslintRules.rules).sort().reduce((obj, key) => {
+  obj[`@ts/${key}`] = tseslintRules.rules[key];
   return obj;
 }, {});
 

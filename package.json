@@ -5,7 +5,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "generate:airbnb": "tsx ./tools/airbnb-ruleset.mjs > airbnb.md",
     "generate:compare-ts-rules": "tsx ./tools/compare-ts-rules.mts > ts-rules.md",
     "generate:config-rules": "tsx ./tools/list-config-rules.mjs > eslint-config.md"
   },
@@ -13,22 +12,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@eslint/js": "9.20.0",
+    "@eslint/js": "9.39.2",
     "cross-fetch": "^4.1.0",
-    "eslint": "9.20.1",
-    "eslint-config-airbnb": "19.0.4",
-    "eslint-config-airbnb-base": "15.0.0",
-    "eslint-config-airbnb-typescript": "18.0.0",
-    "eslint-plugin-import": "2.31.0",
+    "eslint": "9.39.2",
+    "eslint-plugin-import": "2.32.0",
     "install": "^0.13.0",
     "markdown-table": "^3.0.4",
-    "npm": "^10.9.2",
+    "npm": "^10.9.4",
     "typescript": "5.7.3",
-    "typescript-eslint": "8.24.1",
-    "yargs": "^17.7.2"
+    "typescript-eslint": "8.53.0",
+    "yargs": "^18.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.13.5",
+    "@typescript-eslint/eslint-plugin": "^8.53.0",
     "tsx": "^4.19.3"
   }
 }
